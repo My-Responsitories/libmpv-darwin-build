@@ -67,7 +67,6 @@ audio_common_options = [
 
 video_common_options = [
     '--enable-neon', # improve hevc (h265) support on arm
-    '--enable-libxml2', # dash support
     '--enable-videotoolbox',
     '--enable-libdav1d', # av1 support
 ]
@@ -101,7 +100,7 @@ audio_default_options = [
     '--enable-decoder=dsd*',
     '--enable-decoder=dca', # required by dts
 
-    # parsers   
+    # parsers
     '--enable-parser=aac*',
     '--enable-parser=ac3',
     '--enable-parser=cook',
@@ -239,8 +238,8 @@ video_default_options = [
     '--enable-demuxer=avi',
     '--enable-demuxer=av1',
     '--enable-demuxer=matroska',
-    '--enable-demuxer=dash', # --enable-libxml2 required
-    '--enable-demuxer=webm_dash_manifest',
+    # '--enable-demuxer=dash', # --enable-libxml2 required
+    # '--enable-demuxer=webm_dash_manifest',
 
     '--enable-demuxer=ass',
     '--enable-demuxer=srt',

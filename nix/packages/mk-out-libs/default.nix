@@ -37,12 +37,10 @@ if arch != archs.universal then
     mpv = callPackage ../mk-pkg-mpv/default.nix { };
     ffmpeg = callPackage ../mk-pkg-ffmpeg/default.nix { };
     mbedtls = callPackage ../mk-pkg-mbedtls/default.nix { };
-    fftoolsFfi = callPackage ../mk-pkg-fftools-ffi/default.nix { };
+    libplacebo = callPackage ../mk-pkg-libplacebo/default.nix { };
     libvorbis = callPackage ../mk-pkg-libvorbis/default.nix { };
     libogg = callPackage ../mk-pkg-libogg/default.nix { };
     dav1d = callPackage ../mk-pkg-dav1d/default.nix { };
-    libxml2 = callPackage ../mk-pkg-libxml2/default.nix { };
-    uchardet = callPackage ../mk-pkg-uchardet/default.nix { };
     libass = callPackage ../mk-pkg-libass/default.nix { };
     harfbuzz = callPackage ../mk-pkg-harfbuzz/default.nix { };
     fribidi = callPackage ../mk-pkg-fribidi/default.nix { };
@@ -56,20 +54,18 @@ if arch != archs.universal then
         mpv
         ffmpeg
         mbedtls
+        libplacebo
+        libass
+        harfbuzz
+        fribidi
+        freetype
       ]
       ++ pkgs.lib.optionals (flavor == flavors.encodersgpl) [
-        fftoolsFfi
         libvorbis
         libogg
       ]
       ++ pkgs.lib.optionals (variant == variants.video) [
         dav1d
-        libxml2
-        uchardet
-        libass
-        harfbuzz
-        fribidi
-        freetype
         libpng
       ]
       ++ pkgs.lib.optionals (variant == variants.video && flavor == flavors.encodersgpl) [

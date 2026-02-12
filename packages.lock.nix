@@ -5,14 +5,9 @@
     sha256 = "a4003623cdc0109dec3aac8435520aa3fb12c4d69454fa227f2658cdb6dab5fa";
   };
   ffmpeg = {
-    version = "6.0";
-    url = "https://ffmpeg.org/releases/ffmpeg-6.0.tar.xz";
-    sha256 = "57be87c22d9b49c112b6d24bc67d42508660e6b718b3db89c44e47e289137082";
-  };
-  fftools-ffi = {
-    version = "106d5813";
-    url = "https://github.com/moffatman/fftools-ffi/archive/106d58138071eba66c7d814f6573029c712cd597.tar.gz";
-    sha256 = "4577bb410978f5026270390aa65ebf0307250f3f5b0adf5353e060a5a3f4ee25";
+    version = "8.0.1";
+    url = "https://ffmpeg.org/releases/ffmpeg-8.0.1.tar.xz";
+    sha256 = "05ee0b03119b45c0bdb4df654b96802e909e0a752f72e4fe3794f487229e5a41";
   };
   freetype = {
     version = "2.13.2";
@@ -64,24 +59,44 @@
     url = "https://code.videolan.org/videolan/x264/-/archive/a8b68ebfaa68621b5ac8907610d3335971839d52/libx264-a8b68ebfaa68621b5ac8907610d3335971839d52.tar.gz";
     sha256 = "164688b63f11a6e4f6d945057fc5c57d5eefb97973d0029fb0303744e10839ff";
   };
-  libxml2 = {
-    version = "2.11.5";
-    url = "https://download.gnome.org/sources/libxml2/2.11/libxml2-2.11.5.tar.xz";
-    sha256 = "3727b078c360ec69fa869de14bd6f75d7ee8d36987b071e6928d4720a28df3a6";
-  };
   mbedtls = {
     version = "3.4.1";
     url = "https://github.com/Mbed-TLS/mbedtls/archive/refs/tags/v3.4.1.tar.gz";
     sha256 = "a420fcf7103e54e775c383e3751729b8fb2dcd087f6165befd13f28315f754f5";
   };
   mpv = {
-    version = "0.36.0";
-    url = "https://github.com/mpv-player/mpv/archive/refs/tags/v0.36.0.tar.gz";
-    sha256 = "29abc44f8ebee013bb2f9fe14d80b30db19b534c679056e4851ceadf5a5e8bf6";
+    version = "0.41.0";
+    url = "https://github.com/mpv-player/mpv/archive/refs/tags/v0.41.0.tar.gz";
+    sha256 = "ee21092a5ee427353392360929dc64645c54479aefdb5babc5cfbb5fad626209";
   };
-  uchardet = {
-    version = "0.0.8";
-    url = "https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz";
-    sha256 = "e97a60cfc00a1c147a674b097bb1422abd9fa78a2d9ce3f3fdcc2e78a34ac5f0";
+  libplacebo = {
+    version = "7.360.0";
+    url = "https://github.com/haasn/libplacebo/archive/refs/tags/v7.360.0.tar.gz";
+    sha256 = "c4c70d430083915a157cb790660749649f58fee1e946c0a6e554fd1cba5a2e8f";
+  };
+  Vulkan-Headers = {
+    version = "1.4.337";
+    url = "https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.4.337.tar.gz";
+    sha256 = "13845b9dc873758cdc1f2be6219f7fc99afea0a2c80586043b5bb435b99e590b";
+  };
+  fast_float = {
+    version = "8.2.2";
+    url = "https://github.com/fastfloat/fast_float/archive/refs/tags/v8.2.2.tar.gz";
+    sha256 = "e64b5fff88e04959154adbd5fb83331d91f2e04ac06454671cdfcbdff172b158";
+  };
+  glad = {
+    version = "2.0.8";
+    url = "https://github.com/Dav1dde/glad/archive/refs/tags/v2.0.8.tar.gz";
+    sha256 = "44f06f9195427c7017f5028d0894f57eb216b0a8f7c4eda7ce883732aeb2d0fc";
+  };
+  jinja = {
+    version = "3.1.6";
+    url = "https://github.com/pallets/jinja/archive/refs/tags/3.1.6.tar.gz";
+    sha256 = "2074b22a72caa65474902234b320d73463d6d4c223ee49f4b433495758356337";
+  };
+  markupsafe = {
+    version = "7.360.0";
+    url = "https://github.com/pallets/markupsafe/archive/refs/tags/3.0.3.tar.gz";
+    sha256 = "f1d9d06c34515dd3ad210ec769da613057b536d11d6c039183b87757a883a254";
   };
 }
